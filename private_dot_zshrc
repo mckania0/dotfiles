@@ -1,0 +1,89 @@
+# PATH (set first so brew shellenv prepends and wins over /usr/local/bin)
+export PATH="$HOME/bin:$HOME/.local/bin:$HOME/.krew/bin:$HOME/.bun/bin:/usr/local/bin:$PATH"
+
+# Homebrew (prepends /opt/homebrew/bin — takes priority over /usr/local/bin above)
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Terminal / editor
+export TERM=xterm-256color
+export EDITOR=nano
+export LANG=en_US.UTF-8
+
+# Kubernetes
+export KUBECTL_EXTERNAL_DIFF='diff -N --color=always'
+export K9S_EDITOR=nano
+
+# Telemetry opt-outs
+export GH_TELEMETRY=false
+export DO_NOT_TRACK=true
+
+# Completions
+autoload -Uz compinit && compinit
+
+# Tool integrations
+source <(fzf --zsh)
+eval "$(zoxide init zsh)"
+eval "$(direnv hook zsh)"
+eval "$(starship init zsh)"
+
+# Aliases — navigation
+alias cc="claude"
+alias cw='claude --worktree "$@"'
+
+alias k="kubectl"
+alias gp="git pull"
+alias gw="git worktree"
+alias gwl="git worktree list"
+alias cda="cd /Users/mkania/Downloads/elisity/devops_admin"
+alias cdc="cd /Users/coper/copernicus"
+
+# Aliases — modern CLI replacements
+alias cat="bat --paging=never"
+alias ls="eza --icons"
+alias ll="eza -la --icons --git"
+alias lt="eza --tree --icons --level=2"
+alias find="fd"
+
+
+# History
+HISTSIZE=100000
+SAVEHIST=100000
+HISTFILE=~/.zsh_history
+setopt EXTENDED_HISTORY
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_SAVE_NO_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_REDUCE_BLANKS
+setopt HIST_VERIFY
+setopt HIST_NO_STORE
+setopt HIST_FIND_NO_DUPS
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt SHARE_HISTORY
+setopt INC_APPEND_HISTORY_TIME
+
+alias ccd="/opt/homebrew/bin/claude --model 'claude-opus-4-6[1m]' --dangerously-skip-permissions"
+alias ccy="/opt/homebrew/bin/claude"
+
+# >>> c1-vega >>>
+export PATH="$HOME/.c1-vega/bin:$PATH"
+_c1_vega_claude() {
+  c1-vega-plen run --client anthropic -- claude "$@"
+}
+
+claude() {
+  _c1_vega_claude "$@"
+}
+
+_c1_vega_codex() {
+  c1-vega-plen run --client codex --codex-auth chatgpt -- codex "$@"
+}
+
+codex() {
+  _c1_vega_codex "$@"
+}
+# <<< c1-vega <<<
+alias kc='kubecm'
+
+# bun completions
+[ -s "/Users/mkania/.bun/_bun" ] && source "/Users/mkania/.bun/_bun"
+

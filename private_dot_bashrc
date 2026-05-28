@@ -1,0 +1,29 @@
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/mkania/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+# mcpctl-shims-start
+export PATH="/Users/mkania/.mcpctl/shims:$PATH"
+# mcpctl-shims-end
+
+alias claude-mem='/Users/mkania/.bun/bin/bun "/Users/mkania/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"'
+
+# >>> c1-vega >>>
+export PATH="$HOME/.c1-vega/bin:$PATH"
+_c1_vega_claude() {
+  c1-vega-plen run --client anthropic -- claude "$@"
+}
+
+claude() {
+  _c1_vega_claude "$@"
+}
+
+_c1_vega_codex() {
+  c1-vega-plen run --client codex --codex-auth chatgpt -- codex "$@"
+}
+
+codex() {
+  _c1_vega_codex "$@"
+}
+# <<< c1-vega <<<
+. "$HOME/.cargo/env"

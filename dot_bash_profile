@@ -1,0 +1,8 @@
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/mkania/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+# mcpctl-shims-start
+export PATH="/Users/mkania/.mcpctl/shims:$PATH"
+# mcpctl-shims-end
+. "$HOME/.cargo/env"
