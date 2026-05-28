@@ -1,0 +1,16 @@
+k9s:
+  cluster: gsk-emea01
+  namespace:
+    active: default
+    lockFavorites: false
+    favorites:
+      - all
+      - cattle-logging-system
+      - elisity-monitoring
+      - cnpg-system
+      - default
+  view:
+    active: kafkas.kafka.strimzi.io
+  featureGates:
+    nodeShell: false
+  proxy: null

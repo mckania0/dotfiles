@@ -1,0 +1,15 @@
+k9s:
+  cluster: local-25bf8thm2k
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - crossplane-system
+      - argocd
+      - all
+      - default
+  view:
+    active: v1/secrets all
+  featureGates:
+    nodeShell: false
+  proxy: null

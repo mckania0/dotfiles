@@ -1,0 +1,17 @@
+k9s:
+  cluster: qa-nightly
+  namespace:
+    active: default
+    lockFavorites: false
+    favorites:
+      - all
+      - kube-system
+      - emissary
+      - default
+      - cattle-system
+      - cattle-logging-system
+  view:
+    active: v1/configmaps default
+  featureGates:
+    nodeShell: false
+  proxy: null

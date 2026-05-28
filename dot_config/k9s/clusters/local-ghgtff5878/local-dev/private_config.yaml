@@ -1,0 +1,13 @@
+k9s:
+  cluster: local-ghgtff5878
+  namespace:
+    active: argocd
+    lockFavorites: false
+    favorites:
+    - argocd
+    - default
+  view:
+    active: applications.argoproj.io
+  featureGates:
+    nodeShell: false
+  portForwardAddress: localhost

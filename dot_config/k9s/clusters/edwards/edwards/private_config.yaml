@@ -1,0 +1,13 @@
+k9s:
+  cluster: edwards
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - default
+  view:
+    active: nodepool
+  featureGates:
+    nodeShell: false
+  proxy: null

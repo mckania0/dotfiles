@@ -1,0 +1,14 @@
+k9s:
+  cluster: flexjet
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - karpenter
+      - all
+      - default
+  view:
+    active: apps/v1/deployments default
+  featureGates:
+    nodeShell: false
+  proxy: null

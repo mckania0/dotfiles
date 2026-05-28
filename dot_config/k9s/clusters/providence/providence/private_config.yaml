@@ -1,0 +1,16 @@
+k9s:
+  cluster: providence
+  namespace:
+    active: cattle-monitoring-system
+    lockFavorites: false
+    favorites:
+      - emissary
+      - all
+      - cnpg-system
+      - cattle-monitoring-system
+      - default
+  view:
+    active: nodes
+  featureGates:
+    nodeShell: false
+  proxy: null

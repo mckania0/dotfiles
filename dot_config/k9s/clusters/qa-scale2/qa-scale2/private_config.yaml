@@ -1,0 +1,16 @@
+k9s:
+  cluster: qa-scale2
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - cattle-monitoring-system
+      - all
+      - cattle-logging-system
+      - kafka-operator
+      - default
+  view:
+    active: cronjob
+  featureGates:
+    nodeShell: false
+  proxy: null

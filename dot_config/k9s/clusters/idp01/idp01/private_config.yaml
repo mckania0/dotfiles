@@ -1,0 +1,20 @@
+k9s:
+  cluster: idp01
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - idp-dev3
+      - all
+      - argocd
+      - victoria-stack
+      - emissary
+      - idp
+      - tenant-alicja-main
+      - tenant-paolo-vven
+      - tenant-czaku-latest
+  view:
+    active: v1/pods all
+  featureGates:
+    nodeShell: false
+  proxy: null

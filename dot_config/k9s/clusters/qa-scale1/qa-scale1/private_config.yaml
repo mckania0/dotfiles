@@ -1,0 +1,16 @@
+k9s:
+  cluster: qa-scale1
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - cattle-logging-system
+      - all
+      - elisity-monitoring
+      - kafka-operator
+      - default
+  view:
+    active: pods
+  featureGates:
+    nodeShell: false
+  proxy: null

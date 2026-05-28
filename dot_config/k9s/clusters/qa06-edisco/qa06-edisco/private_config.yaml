@@ -1,0 +1,13 @@
+k9s:
+  cluster: qa06-edisco
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - default
+  view:
+    active: pods
+  featureGates:
+    nodeShell: false
+  proxy: null

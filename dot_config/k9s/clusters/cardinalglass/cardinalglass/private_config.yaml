@@ -1,0 +1,14 @@
+k9s:
+  cluster: cardinalglass
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - kube-system
+      - default
+  view:
+    active: v1/pods all
+  featureGates:
+    nodeShell: false
+  proxy: null

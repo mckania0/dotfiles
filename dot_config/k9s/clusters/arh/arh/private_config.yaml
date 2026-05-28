@@ -1,0 +1,13 @@
+k9s:
+  cluster: arh
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - default
+  view:
+    active: nodepools
+  featureGates:
+    nodeShell: false
+  proxy: null

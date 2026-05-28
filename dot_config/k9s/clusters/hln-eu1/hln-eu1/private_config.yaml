@@ -1,0 +1,13 @@
+k9s:
+  cluster: hln-eu1
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - default
+  view:
+    active: nodes
+  featureGates:
+    nodeShell: false
+  proxy: null

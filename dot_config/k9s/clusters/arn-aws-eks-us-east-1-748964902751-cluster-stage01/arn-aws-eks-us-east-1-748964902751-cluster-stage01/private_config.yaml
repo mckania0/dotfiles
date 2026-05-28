@@ -1,0 +1,12 @@
+k9s:
+  cluster: arn:aws:eks:us-east-1:748964902751:cluster/stage01
+  namespace:
+    active: default
+    lockFavorites: false
+    favorites:
+      - default
+  view:
+    active: context
+  featureGates:
+    nodeShell: false
+  proxy: null

@@ -1,0 +1,13 @@
+k9s:
+  cluster: chop
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - default
+  view:
+    active: deployments
+  featureGates:
+    nodeShell: false
+  proxy: null

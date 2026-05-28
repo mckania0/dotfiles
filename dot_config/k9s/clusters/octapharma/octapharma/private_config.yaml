@@ -1,0 +1,13 @@
+k9s:
+  cluster: octapharma
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - default
+  view:
+    active: context
+  featureGates:
+    nodeShell: false
+  proxy: null

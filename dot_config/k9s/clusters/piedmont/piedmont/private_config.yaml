@@ -1,0 +1,13 @@
+k9s:
+  cluster: piedmont
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - default
+  view:
+    active: nodes
+  featureGates:
+    nodeShell: false
+  proxy: null

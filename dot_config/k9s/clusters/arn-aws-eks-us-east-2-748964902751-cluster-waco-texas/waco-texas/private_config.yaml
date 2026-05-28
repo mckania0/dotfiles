@@ -1,0 +1,12 @@
+k9s:
+  cluster: arn:aws:eks:us-east-2:748964902751:cluster/waco-texas
+  namespace:
+    active: default
+    lockFavorites: false
+    favorites:
+      - default
+  view:
+    active: context
+  featureGates:
+    nodeShell: false
+  proxy: null

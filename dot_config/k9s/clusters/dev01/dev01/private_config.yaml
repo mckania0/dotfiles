@@ -1,0 +1,20 @@
+k9s:
+  cluster: dev01
+  namespace:
+    active: ai-sre-platform-v3
+    lockFavorites: false
+    favorites:
+      - ai-sre-platform-v3
+      - all
+      - cattle-monitoring-system
+      - secrets-operator
+      - elisity-monitoring
+      - default
+      - kafka-operator
+      - ai-sre-platform-v2
+      - cattle-logging-system
+  view:
+    active: apps/v1/deployments ai-sre-platform-v3
+  featureGates:
+    nodeShell: false
+  proxy: null

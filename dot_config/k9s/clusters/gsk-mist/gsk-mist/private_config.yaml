@@ -1,0 +1,12 @@
+k9s:
+  cluster: gsk-mist
+  namespace:
+    active: default
+    lockFavorites: false
+    favorites:
+      - default
+  view:
+    active: clusters.postgresql.cnpg.io
+  featureGates:
+    nodeShell: false
+  proxy: null

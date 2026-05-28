@@ -1,0 +1,12 @@
+k9s:
+  cluster: arn:aws:eks:eu-west-1:748964902751:cluster/gsk-atc
+  namespace:
+    active: default
+    lockFavorites: false
+    favorites:
+    - default
+  view:
+    active: po
+  featureGates:
+    nodeShell: false
+  portForwardAddress: localhost

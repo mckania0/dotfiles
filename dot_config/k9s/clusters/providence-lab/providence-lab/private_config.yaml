@@ -1,0 +1,15 @@
+k9s:
+  cluster: providence-lab
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - kafka-operator
+      - cattle-monitoring-system
+      - all
+      - default
+  view:
+    active: pods
+  featureGates:
+    nodeShell: false
+  proxy: null

@@ -1,0 +1,15 @@
+k9s:
+  cluster: qa-scale-dev
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - cattle-monitoring-system
+      - default
+      - causely
+  view:
+    active: v1/pods all
+  featureGates:
+    nodeShell: false
+  proxy: null

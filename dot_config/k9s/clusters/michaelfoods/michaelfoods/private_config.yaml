@@ -1,0 +1,14 @@
+k9s:
+  cluster: michaelfoods
+  namespace:
+    active: emissary
+    lockFavorites: false
+    favorites:
+      - emissary
+      - all
+      - default
+  view:
+    active: pods
+  featureGates:
+    nodeShell: false
+  proxy: null

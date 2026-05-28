@@ -1,0 +1,14 @@
+k9s:
+  cluster: slhn
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - cattle-monitoring-system
+      - default
+  view:
+    active: pods
+  featureGates:
+    nodeShell: false
+  proxy: null

@@ -1,0 +1,20 @@
+k9s:
+  cluster: dev-euw2-mgmt
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - victoria-stack
+      - ve-scale
+      - default
+      - sre-ai
+      - manual
+      - siem
+      - victoriametrics
+      - arc-runner-system
+  view:
+    active: v1/secrets all
+  featureGates:
+    nodeShell: false
+  proxy: null

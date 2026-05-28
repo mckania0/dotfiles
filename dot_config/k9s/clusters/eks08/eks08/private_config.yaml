@@ -1,0 +1,13 @@
+k9s:
+  cluster: eks08
+  namespace:
+    active: default
+    lockFavorites: false
+    favorites:
+      - all
+      - default
+  view:
+    active: cronjob
+  featureGates:
+    nodeShell: false
+  proxy: null

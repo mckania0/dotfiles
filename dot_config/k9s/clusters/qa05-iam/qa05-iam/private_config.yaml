@@ -1,0 +1,13 @@
+k9s:
+  cluster: qa05-iam
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - default
+  view:
+    active: v1/services all
+  featureGates:
+    nodeShell: false
+  proxy: null

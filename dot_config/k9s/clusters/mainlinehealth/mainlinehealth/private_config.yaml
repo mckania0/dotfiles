@@ -1,0 +1,13 @@
+k9s:
+  cluster: mainlinehealth
+  namespace:
+    active: default
+    lockFavorites: false
+    favorites:
+      - all
+      - default
+  view:
+    active: jobs
+  featureGates:
+    nodeShell: false
+  proxy: null

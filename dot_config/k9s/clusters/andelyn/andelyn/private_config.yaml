@@ -1,0 +1,12 @@
+k9s:
+  cluster: andelyn
+  namespace:
+    active: default
+    lockFavorites: false
+    favorites:
+      - default
+  view:
+    active: deployments
+  featureGates:
+    nodeShell: false
+  proxy: null

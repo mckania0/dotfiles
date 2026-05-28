@@ -1,0 +1,14 @@
+k9s:
+  cluster: msk-lab
+  namespace:
+    active: default
+    lockFavorites: false
+    favorites:
+      - all
+      - cattle-logging-system
+      - default
+  view:
+    active: pods
+  featureGates:
+    nodeShell: false
+  proxy: null

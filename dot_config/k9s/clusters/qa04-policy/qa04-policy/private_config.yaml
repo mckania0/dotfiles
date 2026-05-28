@@ -1,0 +1,12 @@
+k9s:
+  cluster: qa04-policy
+  namespace:
+    active: default
+    lockFavorites: false
+    favorites:
+      - default
+  view:
+    active: cronjob
+  featureGates:
+    nodeShell: false
+  proxy: null

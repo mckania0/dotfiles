@@ -1,0 +1,14 @@
+k9s:
+  cluster: healthcare
+  namespace:
+    active: default
+    lockFavorites: false
+    favorites:
+      - cattle-monitoring-system
+      - default
+      - all
+  view:
+    active: pods
+  featureGates:
+    nodeShell: false
+  proxy: null

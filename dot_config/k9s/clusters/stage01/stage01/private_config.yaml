@@ -1,0 +1,12 @@
+k9s:
+  cluster: stage01
+  namespace:
+    active: default
+    lockFavorites: false
+    favorites:
+      - default
+  view:
+    active: pods
+  featureGates:
+    nodeShell: false
+  proxy: null

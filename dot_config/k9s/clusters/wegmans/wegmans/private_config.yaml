@@ -1,0 +1,14 @@
+k9s:
+  cluster: wegmans
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - cattle-monitoring-system
+      - all
+      - default
+  view:
+    active: pods
+  featureGates:
+    nodeShell: false
+  proxy: null

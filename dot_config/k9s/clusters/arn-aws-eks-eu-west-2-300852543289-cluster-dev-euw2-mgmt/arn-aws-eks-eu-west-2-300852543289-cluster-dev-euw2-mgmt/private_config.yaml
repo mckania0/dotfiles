@@ -1,0 +1,13 @@
+k9s:
+  cluster: arn:aws:eks:eu-west-2:300852543289:cluster/dev-euw2-mgmt
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - default
+  view:
+    active: context
+  featureGates:
+    nodeShell: false
+  proxy: null

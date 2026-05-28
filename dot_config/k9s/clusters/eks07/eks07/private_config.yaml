@@ -1,0 +1,13 @@
+k9s:
+  cluster: eks07
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - default
+  view:
+    active: pvc
+  featureGates:
+    nodeShell: false
+  proxy: null

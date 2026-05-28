@@ -1,0 +1,14 @@
+k9s:
+  cluster: qa-test-release
+  namespace:
+    active: default
+    lockFavorites: false
+    favorites:
+      - default
+      - all
+      - secrets-operator
+  view:
+    active: context
+  featureGates:
+    nodeShell: false
+  proxy: null

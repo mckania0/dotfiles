@@ -1,0 +1,18 @@
+k9s:
+  cluster: arn:aws:eks:us-east-1:300852543289:cluster/qa-test-release
+  namespace:
+    active: default
+    lockFavorites: false
+    favorites:
+    - karpenter
+    - all
+    - emissary-system
+    - cattle-system
+    - kube-system
+    - emissary
+    - default
+  view:
+    active: pods
+  featureGates:
+    nodeShell: false
+  portForwardAddress: localhost

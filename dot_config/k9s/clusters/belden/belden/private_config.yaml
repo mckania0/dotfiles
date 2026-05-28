@@ -1,0 +1,13 @@
+k9s:
+  cluster: belden
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - default
+  view:
+    active: nodeclaims
+  featureGates:
+    nodeShell: false
+  proxy: null

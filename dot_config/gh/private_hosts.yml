@@ -1,0 +1,7 @@
+github.com:
+    git_protocol: ssh
+    users:
+        mkania-copernicus:
+            git_protocol: ssh
+        maciej-elisity:
+    user: maciej-elisity

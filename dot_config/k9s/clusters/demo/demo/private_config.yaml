@@ -1,0 +1,16 @@
+k9s:
+  cluster: demo
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - cattle-system
+      - all
+      - elisity-monitoring
+      - cattle-monitoring-system
+      - default
+  view:
+    active: pods
+  featureGates:
+    nodeShell: false
+  proxy: null

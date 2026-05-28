@@ -1,0 +1,13 @@
+k9s:
+  cluster: patreasury
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - default
+  view:
+    active: clusters.postgresql.cnpg.io
+  featureGates:
+    nodeShell: false
+  proxy: null

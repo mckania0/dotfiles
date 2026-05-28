@@ -1,0 +1,13 @@
+k9s:
+  cluster: arn:aws:eks:us-east-1:748964902751:cluster/stage01
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+    - all
+    - default
+  view:
+    active: nodes
+  featureGates:
+    nodeShell: false
+  portForwardAddress: localhost

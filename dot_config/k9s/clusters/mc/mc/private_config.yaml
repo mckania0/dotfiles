@@ -1,0 +1,14 @@
+k9s:
+  cluster: mc
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - elisity-monitoring
+      - default
+  view:
+    active: context
+  featureGates:
+    nodeShell: false
+  proxy: null

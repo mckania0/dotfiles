@@ -1,0 +1,13 @@
+k9s:
+  cluster: arn:aws:eks:us-east-2:748964902751:cluster/andelyn
+  namespace:
+    active: default
+    lockFavorites: false
+    favorites:
+    - all
+    - default
+  view:
+    active: pods
+  featureGates:
+    nodeShell: false
+  portForwardAddress: localhost

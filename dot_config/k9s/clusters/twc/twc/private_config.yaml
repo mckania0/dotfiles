@@ -1,0 +1,14 @@
+k9s:
+  cluster: twc
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - cnpg-system
+      - all
+      - default
+  view:
+    active: pods
+  featureGates:
+    nodeShell: false
+  proxy: null

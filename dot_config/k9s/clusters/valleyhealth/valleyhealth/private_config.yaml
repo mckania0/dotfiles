@@ -1,0 +1,13 @@
+k9s:
+  cluster: valleyhealth
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - default
+  view:
+    active: pods
+  featureGates:
+    nodeShell: false
+  proxy: null

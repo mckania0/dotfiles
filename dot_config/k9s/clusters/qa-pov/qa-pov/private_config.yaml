@@ -1,0 +1,16 @@
+k9s:
+  cluster: qa-pov
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - cattle-monitoring-system
+      - secrets-operator
+      - cattle-logging-system
+      - default
+  view:
+    active: ds
+  featureGates:
+    nodeShell: false
+  proxy: null

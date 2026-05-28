@@ -1,0 +1,15 @@
+k9s:
+  cluster: fairview
+  namespace:
+    active: default
+    lockFavorites: false
+    favorites:
+      - default
+      - all
+      - cattle-monitoring-system
+      - elisity-monitoring
+  view:
+    active: v1/pods default
+  featureGates:
+    nodeShell: false
+  proxy: null

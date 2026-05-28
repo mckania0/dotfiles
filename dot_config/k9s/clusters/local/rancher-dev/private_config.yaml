@@ -1,0 +1,13 @@
+k9s:
+  cluster: local
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - default
+  view:
+    active: management.cattle.io/v3/tokens
+  featureGates:
+    nodeShell: false
+  proxy: null

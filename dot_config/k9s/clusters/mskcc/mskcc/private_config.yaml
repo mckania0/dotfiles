@@ -1,0 +1,14 @@
+k9s:
+  cluster: mskcc
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - cattle-monitoring-system
+      - default
+  view:
+    active: events.k8s.io/v1/events all
+  featureGates:
+    nodeShell: false
+  proxy: null

@@ -1,0 +1,13 @@
+k9s:
+  cluster: gsk-atc
+  namespace:
+    active: default
+    lockFavorites: false
+    favorites:
+      - default
+      - all
+  view:
+    active: pods
+  featureGates:
+    nodeShell: false
+  proxy: null

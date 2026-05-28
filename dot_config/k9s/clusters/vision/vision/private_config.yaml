@@ -1,0 +1,13 @@
+k9s:
+  cluster: vision
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+      - all
+      - default
+  view:
+    active: targetgroupbinding
+  featureGates:
+    nodeShell: false
+  proxy: null

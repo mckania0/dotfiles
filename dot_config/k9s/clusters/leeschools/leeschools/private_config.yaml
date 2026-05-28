@@ -1,0 +1,16 @@
+k9s:
+  cluster: leeschools
+  namespace:
+    active: default
+    lockFavorites: false
+    favorites:
+      - all
+      - cnpg-system
+      - elisity-monitoring
+      - cattle-monitoring-system
+      - default
+  view:
+    active: v1/pods cattle-monitoring-system
+  featureGates:
+    nodeShell: false
+  proxy: null
