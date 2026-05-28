@@ -1,0 +1,33 @@
+# Credentials — stay local only
+.vmgateway
+.vmgateway-prod
+.jira
+.datadog
+.grafana
+.grafana-monitoring
+.zendesk
+.fakturownia
+.mkania_db.key
+.rancher-dev-keys
+.cloudflare-copernicus
+.anyconnect
+
+# Shell history
+.bash_history
+.zsh_history
+.lesshst
+.viminfo
+.psql_history
+.python_history
+
+# Cache / generated
+.zcompdump*
+.DS_Store
+.wget-hsts
+*.bak
+*.backup
+*.tmp.*
+
+# Claude Code — managed separately
+.claude.json
+.claude/
